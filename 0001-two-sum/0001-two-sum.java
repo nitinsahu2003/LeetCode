@@ -9,6 +9,6 @@ class Solution {
              }
              map.put(nums[i],i);
         }
-        throw new IllegalArgumentException("Null");
+        return new int[]{};
     }
 }
