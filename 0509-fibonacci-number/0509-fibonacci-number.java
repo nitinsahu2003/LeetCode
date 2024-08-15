@@ -3,10 +3,14 @@ class Solution {
         int sum=0;
         int a=0;
         int b=1;
-        for(int i=0;i<n;i++){
+        if(n<=1){
+            return n;
+        }
+
+        for(int i=2;i<=n;i++){
             sum=a+b;
-            b=a;
-            a=sum;
+            a=b;
+            b=sum;
         }
         return sum;
     }
