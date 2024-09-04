@@ -6,7 +6,6 @@ class Solution {
        for(int i=0;i<n;i++){
         s2+=nums[i];
        }
-       int result=s1-s2;
-       return result;
+       return s1-s2;
     }
 }
