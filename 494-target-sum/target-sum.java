@@ -1,5 +1,6 @@
 class Solution {
-    static int mod = (int) (Math.pow(10,9)+7);
+
+    //static int mod = (int) (Math.pow(10,9)+7);
     public int findTargetSumWays(int[] nums, int target){
         int sum = 0;
         for(int num : nums){
@@ -21,7 +22,7 @@ class Solution {
                 int pick = 0;
                  if(nums[i] <= target) pick = dp[i-1][target-nums[i]];
 
-                 dp[i][target] = (pick + notPick) % mod;
+                 dp[i][target] = (pick + notPick); //% mod;
             }
         }
         return dp[n-1][tar];
