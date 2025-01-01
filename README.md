@@ -11,4 +11,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/nitinsahu2003/LeetCode/tree/master/0188-best-time-to-buy-and-sell-stock-iv) |
 | [0518-coin-change-ii](https://github.com/nitinsahu2003/LeetCode/tree/master/0518-coin-change-ii) |
+## String
+|  |
+| ------- |
+| [1537-maximum-score-after-splitting-a-string](https://github.com/nitinsahu2003/LeetCode/tree/master/1537-maximum-score-after-splitting-a-string) |
+## Prefix Sum
+|  |
+| ------- |
+| [1537-maximum-score-after-splitting-a-string](https://github.com/nitinsahu2003/LeetCode/tree/master/1537-maximum-score-after-splitting-a-string) |
 <!---LeetCode Topics End-->
