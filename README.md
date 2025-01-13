@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0044-wildcard-matching](https://github.com/nitinsahu2003/LeetCode/tree/master/0044-wildcard-matching) |
 | [0072-edit-distance](https://github.com/nitinsahu2003/LeetCode/tree/master/0072-edit-distance) |
 | [0115-distinct-subsequences](https://github.com/nitinsahu2003/LeetCode/tree/master/0115-distinct-subsequences) |
 | [0516-longest-palindromic-subsequence](https://github.com/nitinsahu2003/LeetCode/tree/master/0516-longest-palindromic-subsequence) |
@@ -14,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0044-wildcard-matching](https://github.com/nitinsahu2003/LeetCode/tree/master/0044-wildcard-matching) |
 | [0072-edit-distance](https://github.com/nitinsahu2003/LeetCode/tree/master/0072-edit-distance) |
 | [0115-distinct-subsequences](https://github.com/nitinsahu2003/LeetCode/tree/master/0115-distinct-subsequences) |
 | [0516-longest-palindromic-subsequence](https://github.com/nitinsahu2003/LeetCode/tree/master/0516-longest-palindromic-subsequence) |
@@ -29,4 +31,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2358-number-of-ways-to-split-array](https://github.com/nitinsahu2003/LeetCode/tree/master/2358-number-of-ways-to-split-array) |
+## Greedy
+|  |
+| ------- |
+| [0044-wildcard-matching](https://github.com/nitinsahu2003/LeetCode/tree/master/0044-wildcard-matching) |
+## Recursion
+|  |
+| ------- |
+| [0044-wildcard-matching](https://github.com/nitinsahu2003/LeetCode/tree/master/0044-wildcard-matching) |
 <!---LeetCode Topics End-->
