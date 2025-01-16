@@ -1,25 +1,28 @@
 class Solution {
-    //2. Tabulation Approach
+    // 3. Space optimization Approach
     public int maxProfit(int[] prices) {
         int n = prices.length;
-        int[][][] dp = new int[n+1][2][3];
-        
-        int profit = 0;
-        for(int ind=n-1;ind>=0;ind--){
-            for(int buy=0;buy<=1;buy++){
-                for(int cap=1;cap<=2;cap++){
-                    if(buy == 0){
-                        dp[ind][buy][cap] = Math.max(0 + dp[ind+1][0][cap],
-                        -prices[ind] + dp[ind+1][1][cap]);
-                    }
-                    if(buy == 1){
-                        dp[ind][buy][cap] = Math.max(0 + dp[ind+1][1][cap],
-                        prices[ind] + dp[ind+1][0][cap-1]);
+        int[][] ahead = new int[2][3];
+        int[][] curr = new int[2][3];
+
+        for (int ind = n - 1; ind >= 0; ind--) {
+            for (int buy = 0; buy <= 1; buy++) {
+                for (int cap = 0; cap <= 2; cap++) {
+                    if (buy == 0) {
+                        curr[buy][cap] = Math.max(0 + ahead[0][cap],
+                        -prices[ind] + ahead[1][cap]);
+                    } else {
+                        curr[buy][cap] = Math.max(0 + ahead[1][cap],
+                        cap > 0 ? prices[ind] + ahead[0][cap - 1] : 0);
                     }
                 }
             }
+            for (int i = 0; i < 2; i++) {
+                for (int j = 0; j < 3; j++) {
+                    ahead[i][j] = curr[i][j];
+                }
+            }
         }
-        return dp[0][0][2];
+        return ahead[0][2];
     }
-
 }
