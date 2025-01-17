@@ -1,29 +1,30 @@
 class Solution {
-    public int maxProfit(int k, int[] prices) {
-        if (prices.length == 0) return 0;
-
-        // If k is greater than half the number of days, it's equivalent to unlimited transactions
-        if (k >= prices.length / 2) {
-            int maxProfit = 0;
-            for (int i = 1; i < prices.length; i++) {
-                if (prices[i] > prices[i - 1]) {
-                    maxProfit += prices[i] - prices[i - 1];
-                }
-            }
-            return maxProfit;
-        }
-
-        // DP arrays
-        int[][] dp = new int[k + 1][prices.length];
-
-        for (int t = 1; t <= k; t++) {
-            int maxDiff = -prices[0];
-            for (int d = 1; d < prices.length; d++) {
-                dp[t][d] = Math.max(dp[t][d - 1], prices[d] + maxDiff);
-                maxDiff = Math.max(maxDiff, dp[t - 1][d] - prices[d]);
+    // 1. Memoization Approach
+    public int maxProfit(int cap, int[] prices) {
+        int n = prices.length;
+        int[][][] dp = new int[n][2][cap + 1];
+        for(int i=0;i<n;i++){
+            for(int j=0;j<2;j++){
+                Arrays.fill(dp[i][j], -1);
             }
         }
+        return helper(prices, 0, 0, cap, dp);
+    }
+    public int helper(int[] prices, int ind, int buy, int cap, int[][][] dp){
+        int n = prices.length;
 
-        return dp[k][prices.length - 1];
+        if(ind == n || cap==0) return 0;
+        if(dp[ind][buy][cap] != -1) return dp[ind][buy][cap];
+        int profit=0;
+
+        if(buy == 0){
+            profit = Math.max(0 + helper(prices, ind+1, 0, cap, dp),
+            -prices[ind] + helper(prices, ind+1, 1, cap, dp));
+        }
+        if(buy == 1){
+            profit = Math.max(0 + helper(prices, ind+1, 1, cap, dp),
+            prices[ind] + helper(prices, ind+1, 0, cap - 1, dp));
+        }
+        return dp[ind][buy][cap] = profit;
     }
 }
