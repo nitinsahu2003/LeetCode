@@ -1,30 +1,34 @@
 class Solution {
-    // 1. Memoization Approach
-    public int maxProfit(int cap, int[] prices) {
+    public int maxProfit(int k, int[] prices) {
         int n = prices.length;
-        int[][][] dp = new int[n+1][2][cap + 1];
-        for(int i=0;i<n;i++){
-            for(int j=0;j<2;j++){
-                Arrays.fill(dp[i][j], -1);
+        if(n==0 || k==0) return 0;
+        int[][][] dp = new int[n+1][2][k+1];
+
+        // for (int ind = 0; ind <= n; ind++) {
+        //     for (int buy = 0; buy <= 1; buy++) {
+        //         dp[ind][buy][0] = 0;
+        //     }
+        // }
+        // for (int buy = 0; buy <= 1; buy++) {
+        //     for (int cap = 0; cap <= k; cap++) {
+        //         dp[n][buy][cap] = 0;
+        //     }
+        // }
+
+        for(int ind=n-1;ind>=0;ind--){
+            for(int buy=0;buy<=1;buy++){
+                for(int cap=1;cap<=k;cap++){
+                    if(buy == 0){
+                        dp[ind][buy][cap] = Math.max(0 + dp[ind+1][0][cap],
+                        -prices[ind] + dp[ind+1][1][cap]);
+                    }
+                    else{
+                        dp[ind][buy][cap] = Math.max(0 + dp[ind+1][1][cap],
+                        prices[ind] + dp[ind+1][0][cap - 1]);
+                    }
+                }
             }
         }
-        return helper(prices, 0, 0, cap, dp);
-    }
-    public int helper(int[] prices, int ind, int buy, int cap, int[][][] dp){
-        int n = prices.length;
-
-        if(ind == n || cap==0) return 0;
-        if(dp[ind][buy][cap] != -1) return dp[ind][buy][cap];
-        int profit=0;
-
-        if(buy == 0){
-            profit = Math.max(0 + helper(prices, ind+1, 0, cap, dp),
-            -prices[ind] + helper(prices, ind+1, 1, cap, dp));
-        }
-        if(buy == 1){
-            profit = Math.max(0 + helper(prices, ind+1, 1, cap, dp),
-            prices[ind] + helper(prices, ind+1, 0, cap - 1, dp));
-        }
-        return dp[ind][buy][cap] = profit;
+        return dp[0][0][k];
     }
 }
