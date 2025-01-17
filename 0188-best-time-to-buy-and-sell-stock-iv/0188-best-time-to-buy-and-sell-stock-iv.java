@@ -2,7 +2,7 @@ class Solution {
     // 1. Memoization Approach
     public int maxProfit(int cap, int[] prices) {
         int n = prices.length;
-        int[][][] dp = new int[n][2][cap + 1];
+        int[][][] dp = new int[n+1][2][cap + 1];
         for(int i=0;i<n;i++){
             for(int j=0;j<2;j++){
                 Arrays.fill(dp[i][j], -1);
