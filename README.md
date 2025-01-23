@@ -40,6 +40,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0300-longest-increasing-subsequence](https://github.com/nitinsahu2003/LeetCode/tree/master/0300-longest-increasing-subsequence) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/nitinsahu2003/LeetCode/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/nitinsahu2003/LeetCode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
+| [1396-count-servers-that-communicate](https://github.com/nitinsahu2003/LeetCode/tree/master/1396-count-servers-that-communicate) |
 | [2358-number-of-ways-to-split-array](https://github.com/nitinsahu2003/LeetCode/tree/master/2358-number-of-ways-to-split-array) |
 ## Prefix Sum
 |  |
@@ -59,4 +60,24 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0300-longest-increasing-subsequence](https://github.com/nitinsahu2003/LeetCode/tree/master/0300-longest-increasing-subsequence) |
+## Depth-First Search
+|  |
+| ------- |
+| [1396-count-servers-that-communicate](https://github.com/nitinsahu2003/LeetCode/tree/master/1396-count-servers-that-communicate) |
+## Breadth-First Search
+|  |
+| ------- |
+| [1396-count-servers-that-communicate](https://github.com/nitinsahu2003/LeetCode/tree/master/1396-count-servers-that-communicate) |
+## Union Find
+|  |
+| ------- |
+| [1396-count-servers-that-communicate](https://github.com/nitinsahu2003/LeetCode/tree/master/1396-count-servers-that-communicate) |
+## Matrix
+|  |
+| ------- |
+| [1396-count-servers-that-communicate](https://github.com/nitinsahu2003/LeetCode/tree/master/1396-count-servers-that-communicate) |
+## Counting
+|  |
+| ------- |
+| [1396-count-servers-that-communicate](https://github.com/nitinsahu2003/LeetCode/tree/master/1396-count-servers-that-communicate) |
 <!---LeetCode Topics End-->
