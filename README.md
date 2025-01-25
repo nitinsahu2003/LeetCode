@@ -43,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0368-largest-divisible-subset](https://github.com/nitinsahu2003/LeetCode/tree/master/0368-largest-divisible-subset) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/nitinsahu2003/LeetCode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [1396-count-servers-that-communicate](https://github.com/nitinsahu2003/LeetCode/tree/master/1396-count-servers-that-communicate) |
+| [1876-map-of-highest-peak](https://github.com/nitinsahu2003/LeetCode/tree/master/1876-map-of-highest-peak) |
 | [2358-number-of-ways-to-split-array](https://github.com/nitinsahu2003/LeetCode/tree/master/2358-number-of-ways-to-split-array) |
 ## Prefix Sum
 |  |
@@ -70,6 +71,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1396-count-servers-that-communicate](https://github.com/nitinsahu2003/LeetCode/tree/master/1396-count-servers-that-communicate) |
+| [1876-map-of-highest-peak](https://github.com/nitinsahu2003/LeetCode/tree/master/1876-map-of-highest-peak) |
 ## Union Find
 |  |
 | ------- |
@@ -78,6 +80,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1396-count-servers-that-communicate](https://github.com/nitinsahu2003/LeetCode/tree/master/1396-count-servers-that-communicate) |
+| [1876-map-of-highest-peak](https://github.com/nitinsahu2003/LeetCode/tree/master/1876-map-of-highest-peak) |
 ## Counting
 |  |
 | ------- |
