@@ -49,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1129-longest-string-chain](https://github.com/nitinsahu2003/LeetCode/tree/master/1129-longest-string-chain) |
 | [1396-count-servers-that-communicate](https://github.com/nitinsahu2003/LeetCode/tree/master/1396-count-servers-that-communicate) |
 | [1876-map-of-highest-peak](https://github.com/nitinsahu2003/LeetCode/tree/master/1876-map-of-highest-peak) |
+| [1878-check-if-array-is-sorted-and-rotated](https://github.com/nitinsahu2003/LeetCode/tree/master/1878-check-if-array-is-sorted-and-rotated) |
 | [2358-number-of-ways-to-split-array](https://github.com/nitinsahu2003/LeetCode/tree/master/2358-number-of-ways-to-split-array) |
 ## Prefix Sum
 |  |
